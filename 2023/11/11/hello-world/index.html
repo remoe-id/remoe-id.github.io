@@ -13,7 +13,7 @@
 
     
 
-    <meta property="og:locale" content="zh" />
+    <meta property="og:locale" content="cn" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content= "Hello World | AST LAB"  />
     <meta property="og:description" content= "AST LAB" />
@@ -34,7 +34,7 @@
             "@type": "Organization",
             "logo": {
                 "@type": "ImageObject",
-                "url": "http://example.comundefined"
+                "url": "http://example.com/images/avatar.jpg"
             },
             "name": "aster"
             },
@@ -80,7 +80,7 @@
             
             
         }
-        window.aomori_logo_typed_animated = false
+        window.aomori_logo_typed_animated = true
         window.aomori_search_algolia = false
 
     </script>
@@ -93,9 +93,16 @@
     <header class="header">
         <div class="header-type">
             
+            <div class="header-type-avatar avatar avatar-sm">
+                <img src="/images/avatar.jpg" alt="aster">
+            </div>
+            
             <div class="header-type-inner">
                 
-                    <a class="header-type-title" href="/">AST LAB</a>
+                    <div id="typed-strings" style="display:none">
+                        <p>AST LAB</p>
+                    </div>
+                    <a class="header-type-title" id="typed" href="/"></a>
                 
     
                 
@@ -104,9 +111,27 @@
         <div class="header-menu">
             <div class="header-menu-inner">
                 
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/categories">Categories</a>
+                
+                <a href="/friends">Friends</a>
+                
+                <a href="/about">About</a>
+                
             </div>
             <div class="header-menu-social">
                 
+    <a class="social" target="_blank" href="https://www.zhihu.com/people/aster0929">
+        <ion-icon name="bulb"></ion-icon>
+    </a>
+
+    <a class="social" target="_blank" href="https://space.bilibili.com/189021238?spm_id_from=333.1007.0.0">
+        <ion-icon name="tv"></ion-icon>
+    </a>
+
             </div>
         </div>
 
@@ -125,6 +150,16 @@
                     <i class="icon icon-cross"></i>
                 </div>
                 <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/categories">Categories</a>
+                    
+                    <a href="/friends">Friends</a>
+                    
+                    <a href="/about">About</a>
                     
                 </div>
             </div>
@@ -201,13 +236,19 @@
     
 
     
+  <div class="article-copyright hairline">
+    <p>
+      本作品采用  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。
+    </p>
+  </div>
+  
 
     
 
     
 
     <section class="share">
-        <div class="share-title">share</div>
+        <div class="share-title">分享</div>
         <a class="share-item" target="_blank"
             href="https://twitter.com/share?text=Hello World - AST LAB&url=http%3A%2F%2Fexample.com%2F2023%2F11%2F11%2Fhello-world%2F">
             <ion-icon name="logo-twitter"></ion-icon>
@@ -256,9 +297,6 @@
       <div class="toc post-toc-html"></div>
     </div>
   </div>
-
-    
-      
 
     
       
