@@ -79,6 +79,8 @@
     
 
     
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    
 
     
 
@@ -93,6 +95,16 @@
     <script>
         window.isPost = true
         window.aomori = {
+            
+            gitalk: {
+                enable: true,
+                clientID: "0867bb8ad32027f48985",
+                clientSecret: "f7640c0b65f15f737ca6b655aebd8b6a9bfed3c9",
+                repo: "ALcomments",
+                owner: "remoe-id",
+                admin: ["remoe-id",],
+                distractionFreeMode: false  // Facebook-like distraction free mode
+            },
             
             
             
@@ -224,6 +236,10 @@
             
 
             
+            <div class="article-busuanzi">
+                <span id="busuanzi_value_page_pv">N</span> 人看过
+            </div>
+            
 
         </div>
 
@@ -269,6 +285,12 @@
     
 
     
+  <div class="article-copyright hairline">
+    <p>
+      本作品采用  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 (CC BY-NC-ND 4.0)</a> 进行许可。
+    </p>
+  </div>
+  
 
     
 
@@ -313,6 +335,9 @@
 
 
 
+<section class="comments">
+    <div id="gitalk-container"></div>
+</section>
 
 
 
@@ -320,6 +345,9 @@
 
 
 
+
+
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </div>
                 </section>
@@ -417,6 +445,8 @@
 
 <script type="module" src="https://unpkg.com/ionicons@6.0.2/dist/ionicons/ionicons.esm.js"></script>
 
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 
 
